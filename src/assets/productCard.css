@@ -96,3 +96,6 @@
   border: 3px solid #5252ee54;
   z-index: 99;
 }
+.no-products-found {
+  margin: 20vh 0px;
+}

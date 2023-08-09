@@ -8,7 +8,7 @@ const SearchBox = ({ updateSearchText }: any) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       updateSearchText(searchText);
-    }, 2000);
+    }, 400);
     return () => {
       clearTimeout(timer);
     };

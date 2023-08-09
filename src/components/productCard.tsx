@@ -16,11 +16,13 @@ const ProductCard = ({
   const getProductsData = async () => {
     try {
       if (searchEnabled === "1" && searchText !== "") {
+        console.log(searchText);
         const response = await axios.post(`${backEndServer}/product/search`, {
           key: searchText,
-          page: null,
+          page: "",
         });
         setProductsData(response.data);
+        console.log(response.data);
       } else {
         const response = await axios.get(`${backEndServer}/product`);
         setProductsData(response.data);

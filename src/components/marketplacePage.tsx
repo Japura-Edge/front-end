@@ -4,7 +4,11 @@ import SearchBox from "./searchBox";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-const MarketplacePage = ({ backEndServer }: any) => {
+const MarketplacePage = ({
+  backEndServer,
+  updateSearchText,
+  newSearchText,
+}: any) => {
   //declaring the state variables
   const [categories, setCategories] = useState([]);
 
@@ -27,7 +31,7 @@ const MarketplacePage = ({ backEndServer }: any) => {
     <div className="marketplacePage">
       <h1>Marketplace</h1>
       <div className="marketplace-header row">
-        <SearchBox />
+        <SearchBox updateSearchText={updateSearchText} />
         <button className="sort-button">Price: Low to High</button>
       </div>
       <div className="marketplace-body row">
@@ -53,7 +57,11 @@ const MarketplacePage = ({ backEndServer }: any) => {
         </div>
         <div className="marketplace-items column">
           <div className="default-market">
-            <ProductCard backEndServer={backEndServer} />
+            <ProductCard
+              backEndServer={backEndServer}
+              searchEnabled="1"
+              searchText={newSearchText}
+            />
           </div>
           <h2>Recommended for You</h2>
           <div className="recommend-market">

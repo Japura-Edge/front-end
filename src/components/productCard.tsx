@@ -2,7 +2,11 @@ import "../assets/productCard.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const ProductCard = ({ backEndServer }: any) => {
+const ProductCard = ({
+  backEndServer,
+  searchEnabled = "0",
+  searchText = "",
+}: any) => {
   //declaring the state variables
   const [productsData, setProductsData] = useState([]);
   const [userData, setUserData] = useState([]);
@@ -11,8 +15,16 @@ const ProductCard = ({ backEndServer }: any) => {
   // fetching the product data from the database using axios
   const getProductsData = async () => {
     try {
-      const response = await axios.get(`${backEndServer}/product`);
-      setProductsData(response.data);
+      if (searchEnabled === "1" && searchText !== "") {
+        const response = await axios.post(`${backEndServer}/product/search`, {
+          key: searchText,
+          page: null,
+        });
+        setProductsData(response.data);
+      } else {
+        const response = await axios.get(`${backEndServer}/product`);
+        setProductsData(response.data);
+      }
     } catch (error) {
       console.log(error);
     }
@@ -37,7 +49,7 @@ const ProductCard = ({ backEndServer }: any) => {
   useEffect(() => {
     getProductsData();
     getUserData();
-  }, []);
+  }, [searchText]);
 
   // rending the product card
   return (

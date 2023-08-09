@@ -10,6 +10,7 @@ function App() {
   var backEndServer = "https://japura-edge-server.azurewebsites.net";
   const [isInHomePage, setIsInHomePage] = useState(0);
   const [isInMarketplacePage, setIsInMarketplacePage] = useState(1);
+  const [searchText, setSearchText] = useState("");
 
   //navigation button click handlers
   const handleHomeClick = () => {
@@ -19,6 +20,9 @@ function App() {
   const handleMarketClick = () => {
     setIsInHomePage(0);
     setIsInMarketplacePage(1);
+  };
+  const updateSearchText = (text: any) => {
+    setSearchText(text);
   };
 
   //rendering the components
@@ -30,7 +34,11 @@ function App() {
       />
       {isInHomePage ? <HomePage backEndServer={backEndServer} /> : null}
       {isInMarketplacePage ? (
-        <MarketplacePage backEndServer={backEndServer} />
+        <MarketplacePage
+          backEndServer={backEndServer}
+          updateSearchText={updateSearchText}
+          newSearchText={searchText}
+        />
       ) : null}
       <Footer />
     </div>

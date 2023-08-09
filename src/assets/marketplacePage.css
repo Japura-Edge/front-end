@@ -1,0 +1,119 @@
+.marketplacePage {
+  margin: 15vh 0;
+  text-align: center;
+}
+.marketplace-header {
+  margin-bottom: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+.sort-button {
+  font-size: 1.15rem;
+  margin: 1vh 0.5vw 2vh 3vw;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  background-color: #5252ee2e;
+  color: #5252ee;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.25s ease-out;
+}
+.sort-button:hover {
+  background-color: #5252ee;
+  color: #fff;
+}
+
+.marketplace-body {
+  width: 90vw;
+  margin: 2rem auto;
+  color: #5252ee;
+  gap: 1rem;
+  align-items: start;
+  justify-content: space-between;
+}
+.marketplace-categories {
+  width: 23vw;
+  gap: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.marketplace-categories h3 {
+  margin: 10px 5px;
+}
+.category-section {
+  margin: 0m;
+  width: 100%;
+  border: 2px solid #5252ee;
+  border-radius: 15px;
+  padding: 0px 10px 20px;
+}
+.category {
+  font-size: 1.15rem;
+  font-weight: 400;
+  padding: 5px;
+  width: 90%;
+  background-color: #5252ee19;
+  margin: 3px;
+  border-radius: 7px;
+  transition: 0.25s ease-out;
+}
+.category:hover {
+  background-color: #5252eecd;
+  color: #fff;
+}
+
+.price-section {
+  width: 100%;
+}
+.price-range {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.price-range input {
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+  width: 100px;
+  background-color: #d2d2ff;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  color: #5252ee;
+  border: none;
+  border: 2px solid #5252ee;
+  border-radius: 7px;
+  margin: 10px 10px;
+  transition: 0.25 ease-out;
+}
+.price-range input::placeholder {
+  color: #5252ee;
+}
+.price-range input:focus {
+  outline: none;
+  border: 2px solid #5252ee;
+  background-color: #dfdffe;
+}
+
+.marketplace-items {
+  width: 70vw;
+  gap: 7vh;
+}
+.marketplace-items h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  width: fit-content;
+  margin: 0 auto;
+  background-color: #d3d3ee;
+  padding: 5px 30px;
+  transform: translateY(+11vh);
+}
+.recommend-market {
+  padding: 3rem 0.75rem 2rem;
+  border: 3px solid #5252ee;
+  border-radius: 1.5rem;
+  height: 65vh;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 0.3rem;
+}

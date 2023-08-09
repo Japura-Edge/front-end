@@ -1,0 +1,32 @@
+.user-base {
+  margin: 15vh 0;
+}
+.user-base-cards {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.user-base-card {
+  flex-wrap: nowrap;
+  border: 2px solid #5252ee;
+  padding: 7px 7px 7px 17px;
+  border-radius: 14px;
+  transition: 0.25s ease-out;
+}
+.user-base-card:hover {
+  background-color: #5555ff14;
+  color: white;
+  box-shadow: 0 0 0.5rem #0000001d;
+}
+.user-base-card h2 {
+  margin: 0px;
+  color: #5252ee;
+  font-weight: 500;
+  font-size: 1.15rem;
+}
+.user-base-card span {
+  margin-left: 20px;
+  padding: 2px 10px;
+  color: white;
+  background-color: #5252ee;
+  border-radius: 8px;
+}

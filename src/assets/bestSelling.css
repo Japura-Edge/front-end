@@ -1,0 +1,18 @@
+.best-selling-section {
+  margin: 15vh 0;
+}
+.best-selling-section h1 {
+  margin-bottom: 0px;
+  transform: translate(-28vw, +37px);
+  background-color: #d3d3ee;
+  padding: 5px 35px;
+  border-radius: 1.25rem;
+}
+.best-selling-container {
+  border: 4px solid #5252ee;
+  width: 90vw;
+  height: 81.5vh;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  padding: 3.5rem 2rem 2rem;
+}

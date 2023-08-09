@@ -1,0 +1,84 @@
+.homePage {
+  scroll-margin-top: 12vh;
+  width: 95vw;
+  margin: 13vh auto;
+  flex-wrap: wrap;
+}
+
+/* Banner section */
+.home-banner-back {
+  width: 95vw;
+  height: 75vh;
+  margin: 5px auto;
+  object-fit: cover;
+  border-radius: 1.25rem;
+}
+.home-search {
+  position: absolute;
+  transform: translate(+8vw, -17vh);
+}
+.banner-image {
+  position: absolute;
+  width: 33vw;
+  object-fit: contain;
+  right: 0;
+  transform: translate(-8vw, +2vh);
+}
+
+/* Introduction section */
+.home-introduction {
+  margin: 20vh 0;
+  gap: 1rem;
+}
+.home-introduction img {
+  width: 35vw;
+  height: 45vh;
+  object-fit: contain;
+  filter: drop-shadow(0 0 3rem #0000001d);
+}
+.home-introduction-text {
+  width: 40vw;
+  font-size: 1.15rem;
+  color: #1a1a6e;
+}
+.home-introduction-text span {
+  background-color: #5252ee22;
+  padding: 1px 10px;
+  border-radius: 100px;
+}
+
+/* Why Japura Edge section */
+.home-why {
+  margin: 15vh 0;
+}
+.home-why-cards {
+  gap: 1rem;
+  align-items: stretch;
+}
+.home-why-card {
+  padding: 2.5rem 1rem 0.5rem;
+  border-radius: 15px;
+  width: 14vw;
+  height: 32vh;
+  justify-content: start;
+  background-color: #5555ff14;
+  transition: 0.3s ease-out;
+  border: 2px solid transparent;
+}
+.home-why-card:hover {
+  background-color: #5555ff2b;
+  transform: scale(1.05);
+  border: 2px solid #5252ee;
+}
+.home-why-card i {
+  font-size: 3rem;
+  color: #5252ee;
+  margin-bottom: 10px;
+}
+.home-why-card h2 {
+  font-size: 1.25rem;
+  color: #2c2c9a;
+  text-align: center;
+  line-height: 1.25;
+  font-weight: 500;
+}

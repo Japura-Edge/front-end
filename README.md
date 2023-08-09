@@ -1,3 +1,3 @@
-# Ja'ura Edge
+# Japura Edge
 
-Experience the J'pura Difference
+Experience the Japura Difference

@@ -1,0 +1,70 @@
+.footer {
+  margin: 5vh 0 0 0;
+  padding: 1rem 2rem;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  color: #fff;
+  background-color: #5252ee;
+}
+.footer-content {
+  align-items: stretch;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.footer-logo {
+  width: 30vw;
+}
+.footer-logo img {
+  width: 25vw;
+  object-fit: contain;
+  border-radius: 15px;
+}
+
+.contact-us {
+  width: 30vw;
+  padding-bottom: 15px;
+}
+.contact-us-details {
+  width: 25vw;
+  align-items: start;
+  padding: 0.5rem 1.5rem;
+  background-color: #6363f9;
+  border-radius: 12px;
+}
+.contact-us h3 {
+  margin: 5px 0px;
+  font-weight: 300;
+}
+.contact-us-details i {
+  font-size: 1.45rem;
+  margin-right: 25px;
+  transform: translateY(+2px);
+}
+
+.footer-links {
+  width: 30vw;
+}
+.footer-links-icons {
+  font-size: 2rem;
+  height: 10vh;
+  gap: 1.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #6363f9;
+  border-radius: 12px;
+  width: fit-content;
+  margin: 0 auto;
+  transition: 0.3s ease-out;
+}
+.footer-links-icons a {
+  transition: 0.3s ease-out;
+}
+.footer-links-icons a:hover {
+  color: #c8c8ff;
+}

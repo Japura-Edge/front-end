@@ -1,6 +1,15 @@
 import "../assets/navigation.css";
 
-const Navigation = ({ onMarketClick, onHomeClick }: any) => {
+const Navigation = ({
+  onMarketClick,
+  onHomeClick,
+  onLoginClick,
+  onSignUpClick,
+  isInSignupPage,
+  isInLoginPage,
+  onAboutClick,
+}: any) => {
+  // rendering the navigation bar
   return (
     <div className="nav-bar row">
       <div className="main-nav row">
@@ -13,17 +22,21 @@ const Navigation = ({ onMarketClick, onHomeClick }: any) => {
         <a href="#" className="nav-btn" onClick={onMarketClick}>
           Marketplace
         </a>
-        <a href="#about" className="nav-btn">
+        <a href="#about" className="nav-btn" onClick={onAboutClick}>
           About Us
         </a>
       </div>
       <div className="user-nav row">
-        <a href="#login" className="nav-login">
-          Login
-        </a>
-        <a href="#signup" className="nav-signup">
-          Sign Up
-        </a>
+        {isInLoginPage !== 1 ? (
+          <a href="#" className="nav-login" onClick={onLoginClick}>
+            Login
+          </a>
+        ) : null}
+        {isInSignupPage !== 1 ? (
+          <a href="#" className="nav-signup" onClick={onSignUpClick}>
+            Sign Up
+          </a>
+        ) : null}
       </div>
     </div>
   );

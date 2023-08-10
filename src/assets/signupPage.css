@@ -1,0 +1,64 @@
+.signup-image-section {
+  width: 40vw;
+  height: 80vh;
+  border-radius: 1.25rem 0 0 1.25rem;
+  background-color: #595aef;
+}
+.signup-image-section h2 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 800;
+  margin: 0 0 -2vh;
+}
+.signup-image-section img {
+  width: 32vw;
+  height: 50vh;
+  object-fit: contain;
+  margin: -7vh 0 -5vh;
+}
+
+.signup-form-section {
+  width: 55vw;
+  height: 80vh;
+  border-radius: 0 1.25rem 1.25rem 0;
+  background-color: #5252ee22;
+}
+
+.sign-email-section,
+.sign-password-section {
+  width: 41vw;
+  align-items: flex-start;
+}
+.signup-input {
+  margin: 1vh 0.5vw 0.5vh 1vw;
+  font-size: 1.2rem;
+  width: 39.5vw;
+  background-color: #cdcdfd;
+  color: rgb(0, 0, 0);
+  padding: 20px 25px 8px;
+  color: #5252ee;
+  border: 3px solid #5252ee58;
+  border-radius: 8px;
+  transition: 0.25s ease-in-out;
+}
+.signup-input::placeholder {
+  color: #5252ee;
+}
+.signup-input:focus {
+  outline: none;
+  border: 3px solid #5252ee;
+  background-color: #cdcdfd;
+  box-shadow: 0 10px 25px 0.2rem #5252ee21;
+}
+.signp-lable {
+  font-size: 1.1rem;
+  background-color: #cdcdfd;
+  padding: 3px 15px;
+  border-radius: 100px;
+  color: #5252ee;
+  font-weight: 600;
+  transform: translate(+30px, +27px);
+}
+.input-split {
+  width: 19vw;
+}

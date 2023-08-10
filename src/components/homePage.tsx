@@ -38,7 +38,7 @@ const HomePage = ({ backEndServer }: any) => {
 
   //rendering the components
   return (
-    <div className="homePage" id="#home">
+    <div className="homePage row" id="#home">
       {/* Banner section */}
       <div className="home-banner">
         <img

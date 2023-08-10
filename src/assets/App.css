@@ -16,6 +16,7 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  animation: hof-fade-in 0.5s;
 }
 
 .column {
@@ -23,6 +24,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: hof-fade-in 0.5s;
 }
 
 a {
@@ -37,4 +39,16 @@ h1 {
   color: #5252ee;
   font-weight: 800;
   margin: 1rem 0 2rem;
+}
+
+/* animation used when loading the page */
+@keyframes hof-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(+10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }

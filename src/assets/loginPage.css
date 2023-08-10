@@ -1,0 +1,87 @@
+.login-page {
+  margin: 15vh 0vh 12vh;
+  width: 90vw;
+  height: 80vh;
+  border-radius: 1.25rem;
+  /* box-shadow: 0 0 2rem 0.25rem rgba(0, 0, 0, 0.155); */
+}
+.login-image-section {
+  width: 50vw;
+  height: 80vh;
+  border-radius: 1.25rem 0 0 1.25rem;
+  background-color: #595aef;
+}
+.login-image-section h2 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 800;
+  margin: 0 0 -2vh;
+}
+.login-image-section img {
+  width: 35vw;
+  height: 50vh;
+  object-fit: contain;
+  margin: -7vh 0 -5vh;
+}
+
+.login-form-section {
+  width: 40vw;
+  height: 80vh;
+  border-radius: 0 1.25rem 1.25rem 0;
+  background-color: #5252ee22;
+}
+
+.email-section,
+.password-section {
+  width: 32vw;
+  align-items: flex-start;
+}
+.email-section input,
+.password-section input {
+  margin: 1vh 0.5vw 1vh 1vw;
+  font-size: 1.2rem;
+  width: 30vw;
+  background-color: #cdcdfd;
+  color: rgb(0, 0, 0);
+  padding: 20px 25px 8px;
+  color: #5252ee;
+  border: 3px solid #5252ee58;
+  border-radius: 8px;
+  transition: 0.25s ease-in-out;
+}
+.email-section input::placeholder,
+.password-section input::placeholder {
+  color: #5252ee;
+}
+.email-section input:focus,
+.password-section input:focus {
+  outline: none;
+  border: 3px solid #5252ee;
+  background-color: #cdcdfd;
+  box-shadow: 0 10px 25px 0.2rem #5252ee21;
+}
+.email-section label,
+.password-section label {
+  font-size: 1.2rem;
+  background-color: #cdcdfd;
+  padding: 3px 15px;
+  border-radius: 100px;
+  color: #5252ee;
+  font-weight: 600;
+  transform: translate(+30px, +27px);
+}
+
+.login-button {
+  padding: 12px 40px;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 5vh;
+  border-radius: 8px;
+  border: none;
+  transition: 0.25s ease-out;
+  background-color: #6363f9;
+  cursor: pointer;
+}
+.login-button:hover {
+  background-color: #4646e2;
+}

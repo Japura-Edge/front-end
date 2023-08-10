@@ -132,7 +132,7 @@
   width: 120px;
   border: none;
   color: #5252ee;
-  transition: 0.25s ease-out;
+  transition: 0.2s ease-out;
   cursor: pointer;
   background-color: #5252ee37;
 }
@@ -140,8 +140,10 @@
   gap: 0.5rem;
 }
 .page-number {
-  padding: 10px 15px;
+  padding: 8px 15px;
   width: fit-content;
+  background-color: transparent;
+  border: 1px solid #5252ee;
 }
 .prev-page:hover,
 .next-page:hover,

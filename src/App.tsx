@@ -8,8 +8,8 @@ import { useState } from "react";
 function App() {
   //declaring the state variables
   var backEndServer = "https://japura-edge-server.azurewebsites.net";
-  const [isInHomePage, setIsInHomePage] = useState(0);
-  const [isInMarketplacePage, setIsInMarketplacePage] = useState(1);
+  const [isInHomePage, setIsInHomePage] = useState(1);
+  const [isInMarketplacePage, setIsInMarketplacePage] = useState(0);
   const [searchText, setSearchText] = useState("");
 
   //navigation button click handlers

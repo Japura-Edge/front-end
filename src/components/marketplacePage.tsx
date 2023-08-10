@@ -62,6 +62,14 @@ const MarketplacePage = ({
               searchEnabled="1"
               searchText={newSearchText}
             />
+            <div className="product-page row">
+              <button className="prev-page">Previous</button>
+              <div className="page-numbers row">
+                <button className="page-number">1</button>
+                <button className="page-number">2</button>
+              </div>
+              <button className="next-page">Next</button>
+            </div>
           </div>
           <h2>Recommended for You</h2>
           <div className="recommend-market">

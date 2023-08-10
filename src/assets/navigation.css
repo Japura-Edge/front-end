@@ -18,6 +18,7 @@
   padding: 7px 25px;
   border-radius: 7px;
   background-color: #5352ee;
+  transition: 0.25s ease-out;
 }
 .nav-btn:hover {
   background-color: #3c3cd4;

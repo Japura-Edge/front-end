@@ -104,7 +104,7 @@
   margin: 0;
   width: fit-content;
   margin: 0 auto;
-  background-color: #d3d3ee;
+  background-color: #e0e0ff;
   padding: 5px 30px;
   transform: translateY(+11vh);
 }
@@ -112,8 +112,40 @@
   padding: 3rem 0.75rem 2rem;
   border: 3px solid #5252ee;
   border-radius: 1.5rem;
-  height: 65vh;
+  height: 69.5vh;
   width: 100%;
   overflow: hidden;
   margin: 0 0.3rem;
+}
+
+/* Page numbering section */
+.product-page {
+  margin: 5vh 0 3vh;
+  gap: 1.5rem;
+}
+.prev-page,
+.next-page,
+.page-number {
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 8px;
+  width: 120px;
+  border: none;
+  color: #5252ee;
+  transition: 0.25s ease-out;
+  cursor: pointer;
+  background-color: #5252ee37;
+}
+.page-numbers {
+  gap: 0.5rem;
+}
+.page-number {
+  padding: 10px 15px;
+  width: fit-content;
+}
+.prev-page:hover,
+.next-page:hover,
+.page-number:hover {
+  background-color: #5252ee;
+  color: #fff;
 }

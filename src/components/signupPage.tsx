@@ -2,6 +2,7 @@ import "../assets/signupPage.css";
 import SearchBox from "./searchBox";
 
 const SignupPage = ({ backEndServer }: any) => {
+  console.log(backEndServer);
   return (
     <div className="login-page row">
       <div className="signup-image-section column">

@@ -17,6 +17,8 @@ function App() {
   const [isInSignupPage, setIsInSignupPage] = useState(0);
   const [searchText, setSearchText] = useState("");
 
+  console.log(isInAboutPage);
+
   //navigation button click handlers
   const handleHomeClick = () => {
     setIsInHomePage(1);

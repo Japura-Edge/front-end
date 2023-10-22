@@ -7,7 +7,7 @@ const Navigation = ({}) => {
     <div className="nav-bar row">
       <div className="main-nav row">
         <NavLink className="row" to="/">
-          <img src="./images/logo-horizontal-nav.png" alt="logo" />
+          <img src="./images/JapuraChoice.png" alt="logo" />
         </NavLink>
         <NavLink className="nav-btn" to="/">
           Home

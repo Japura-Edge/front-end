@@ -57,13 +57,13 @@ const HomePage = ({ backEndServer }: any) => {
       </div>
       <Categories categoryList={categoryGroups} />
 
-      {/* What is Japura Edge section */}
+      {/* What is J'pura Choice section */}
       <div className="home-introduction row">
-        <img src="./images/logo-inverted.png" alt="Japura Edge logo" />
+        <img src="./images/logo-inverted.png" alt="J'pura Choice logo" />
         <div className="home-introduction-text">
-          <h1>What is Japura Edge</h1>
+          <h1>What is J'pura Choice</h1>
           <p>
-            Japura Edge is the one and only online platform that connects the
+            J'pura Choice is the one and only online platform that connects the
             entrepreneurs and the freelancers of the University of Sri
             Jayewardenepura. This platform is designed to help the students to
             offer their services to the society. <span>Exclusive for</span> the
@@ -72,9 +72,9 @@ const HomePage = ({ backEndServer }: any) => {
         </div>
       </div>
 
-      {/* Why Japura Edge section */}
+      {/* Why J'pura Choice section */}
       <div className="home-why column">
-        <h1>Why Japura Edge</h1>
+        <h1>Why J'pura Choice</h1>
         <div className="home-why-cards row">
           <div className="home-why-card column">
             <i className="fa fa-diamond"></i>

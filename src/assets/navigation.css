@@ -1,13 +1,15 @@
 .nav-bar {
   width: 100vw;
   justify-content: space-between;
-  padding: 7px 2.5vw;
-  background-color: #5352ee;
+  padding: 0px 2.5vw;
+  background-color: white;
   position: fixed;
-  color: #fff;
+  box-shadow: 0px 0px 50px 0px #00000024;
+  color: var(--col-maroon);
   top: 0;
   left: 0;
   z-index: 9999;
+  font-weight: 600;
 }
 
 .main-nav {
@@ -15,17 +17,17 @@
   gap: 0.5rem;
 }
 .nav-btn {
-  padding: 7px 25px;
+  padding: 7px 15px;
   border-radius: 7px;
-  background-color: #5352ee;
   transition: 0.25s ease-out;
 }
 .nav-btn:hover {
-  background-color: #3c3cd4;
+  background-color: var(--col-maroon);
+  color: white;
 }
 .main-nav img {
-  width: 170px;
-  padding: 0px 0px;
+  height: 70px;
+  padding: 7px 15px 7px 0px;
   margin: 0px 15px;
   object-fit: contain;
   filter: drop-shadow(0px 0px 50px #000000ad);
@@ -40,8 +42,8 @@
   padding: 7px 25px;
   border-radius: 7px;
   transition: 0.25s ease-out;
-  background-color: #6363f9;
-  box-shadow: 0px 0px 50px 0px #0000003b;
+  border: 1px solid var(--col-maroon);
+  box-shadow: 0px 0px 0px 0px #0000003b;
   display: block;
 }
 .nav-signup.active,
@@ -49,11 +51,13 @@
   display: none;
 }
 .nav-signup {
-  background-color: #6363f9;
+  border: 1px solid var(--col-maroon);
 }
 .nav-signup:hover {
-  background-color: #3c3cd4;
+  color: white;
+  background-color: var(--col-maroon);
 }
 .nav-login:hover {
-  background-color: #3c3cd4;
+  color: white;
+  background-color: var(--col-maroon);
 }

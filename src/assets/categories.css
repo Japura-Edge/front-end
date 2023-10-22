@@ -9,12 +9,11 @@
   cursor: pointer;
   border: none;
   font-size: 1rem;
-  color: #5252ee;
-  border-radius: 10px;
-  background-color: #5252ee23;
+  color: var(--col-maroon);
+  border-radius: 7px;
   transition: 0.25s ease-out;
 }
 .category-item:hover {
-  background-color: #5252ee;
+  background-color: #590004cb;
   color: white;
 }

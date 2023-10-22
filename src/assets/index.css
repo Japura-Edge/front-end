@@ -6,15 +6,20 @@
   font-family: "Nunito Sans", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   color-scheme: light;
   color: rgb(0, 0, 0);
-  background-color: #e0e0ff;
+  background-color: #ffffff;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --col-maroon: #590004;
+  --col-red: #a50104;
+  --col-dark: #250001;
+  --col-light: #f3f3f3;
+  --col-yellow: #fcba04;
 }
 
 body {

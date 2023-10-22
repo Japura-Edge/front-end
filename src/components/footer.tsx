@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-content row">
         <div className="footer-logo column">
-          <img src="./images/logo-horizontal.png" alt="Japura Edge logo" />
+          <img src="./images/JapuraChoice.png" alt="Japura Choice logo" />
         </div>
         <div className="contact-us column">
           <h2>Contact Us</h2>
@@ -16,7 +16,7 @@ const Footer = () => {
             </h3>
             <h3>
               <i className="fa fa-envelope" />
-              japuraedge@gmail.com
+              japurachoice@gmail.com
             </h3>
           </div>
         </div>
@@ -36,6 +36,9 @@ const Footer = () => {
               <i className="fa fa-twitter-square" />
             </a>
           </div>
+        </div>
+        <div className="footer-copyright">
+          <h3>© 2023 J'pura Choice. All rights reserved.</h3>
         </div>
       </div>
     </div>

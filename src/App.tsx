@@ -7,7 +7,7 @@ import LoginPage from "./components/loginPage";
 import MarketplacePage from "./components/marketplacePage";
 import Navigation from "./components/navigation";
 import SignupPage from "./components/signupPage";
-import aboutPage from "./components/aboutPage";
+// import aboutPage from "./components/aboutPage";
 
 function App() {
   //declaring the state variables

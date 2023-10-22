@@ -1,42 +1,31 @@
 import "../assets/navigation.css";
+import { NavLink } from "react-router-dom";
 
-const Navigation = ({
-  onMarketClick,
-  onHomeClick,
-  onLoginClick,
-  onSignUpClick,
-  isInSignupPage,
-  isInLoginPage,
-  onAboutClick,
-}: any) => {
+const Navigation = ({}) => {
   // rendering the navigation bar
   return (
     <div className="nav-bar row">
       <div className="main-nav row">
-        <a href="#" className="row" onClick={onHomeClick}>
+        <NavLink className="row" to="/">
           <img src="./images/logo-horizontal-nav.png" alt="logo" />
-        </a>
-        <a href="#" className="nav-btn" onClick={onHomeClick}>
+        </NavLink>
+        <NavLink className="nav-btn" to="/">
           Home
-        </a>
-        <a href="#" className="nav-btn" onClick={onMarketClick}>
+        </NavLink>
+        <NavLink className="nav-btn" to="/marketplace">
           Marketplace
-        </a>
-        <a href="#about" className="nav-btn" onClick={onAboutClick}>
+        </NavLink>
+        <NavLink className="nav-btn" to="/aboutus">
           About Us
-        </a>
+        </NavLink>
       </div>
       <div className="user-nav row">
-        {isInLoginPage !== 1 ? (
-          <a href="#" className="nav-login" onClick={onLoginClick}>
-            Login
-          </a>
-        ) : null}
-        {isInSignupPage !== 1 ? (
-          <a href="#" className="nav-signup" onClick={onSignUpClick}>
-            Sign Up
-          </a>
-        ) : null}
+        <NavLink className="nav-login" to="/login">
+          Login
+        </NavLink>
+        <NavLink className="nav-signup" to="/signup">
+          Sign Up
+        </NavLink>
       </div>
     </div>
   );

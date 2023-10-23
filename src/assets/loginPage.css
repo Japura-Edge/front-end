@@ -31,12 +31,12 @@
   background-color: #5252ee22;
 }
 
-.email-section,
+.username-section,
 .password-section {
   width: 32vw;
   align-items: flex-start;
 }
-.email-section input,
+.username-section input,
 .password-section input {
   margin: 1vh 0.5vw 1vh 1vw;
   font-size: 1.2rem;
@@ -49,18 +49,18 @@
   border-radius: 8px;
   transition: 0.25s ease-in-out;
 }
-.email-section input::placeholder,
+.username-section input::placeholder,
 .password-section input::placeholder {
   color: #5252ee;
 }
-.email-section input:focus,
+.username-section input:focus,
 .password-section input:focus {
   outline: none;
   border: 3px solid #5252ee;
   background-color: #cdcdfd;
   box-shadow: 0 10px 25px 0.2rem #5252ee21;
 }
-.email-section label,
+.username-section label,
 .password-section label {
   font-size: 1.2rem;
   background-color: #cdcdfd;

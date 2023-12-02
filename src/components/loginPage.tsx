@@ -12,6 +12,7 @@ const LoginPage = ({ backEndServer }: any) => {
     userName: "",
     password: ""
   })
+  
   const [outputMessage, setoutputMessage] = useState('');
 
   const handleChange = (event: any) => {
@@ -23,29 +24,37 @@ const LoginPage = ({ backEndServer }: any) => {
   }
 
   const handlelogin = async () => {
-    try {
-      const res = await axios.post(`https://japura-edge-server.azurewebsites.net/user/login`, userData)
+    try { const res = await axios.post(`https://japura-edge-server.azurewebsites.net/user/login`, userData)
 
       if (res.data.message) {
         const { message } = res.data;      
-        setoutputMessage(message)
+        // setoutputMessage(message)
+        console.log("output "+outputMessage);
+        
         if (message.userName) {
           console.log('Login successful:', message.userName);
           navigate('/');
-        } else if (message === 'Incorrect password') {
-          console.log('Incorrect password');
-        } else if (message === 'User not found') {
-          console.log('User not found');
-        } else {
-          console.log('Incorrect username or password');
         }
       } else {
         console.log('Unexpected response from the server');
       }
-      console.log(outputMessage);
     }
-    catch (err) {
-      console.log(err);
+    catch (err: any) {
+      if (err.response && err.response.data && err.response.data.message) {
+        const message = err.response.data.message;
+    
+        if (message === 'Incorrect password') {
+          console.log('Incorrect password');
+          setoutputMessage('Incorrect password');
+        } else if (message === 'User not found') {
+          console.log('User not found');
+          setoutputMessage('User not found');
+        } else {
+          console.log('Incorrect username or password');
+        }
+      } else {
+        console.log('Unexpected error:', err);
+      }
     }
   }
 

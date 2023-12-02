@@ -27,7 +27,7 @@ const LoginPage = ({ backEndServer }: any) => {
       const res = await axios.post(`https://japura-edge-server.azurewebsites.net/user/login`, userData)
 
       if (res.data.message) {
-        const { message } = res.data;
+        const { message } = res.data;      
         setoutputMessage(message)
         if (message.userName) {
           console.log('Login successful:', message.userName);

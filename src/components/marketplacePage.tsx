@@ -12,7 +12,7 @@ const MarketplacePage = ({
   //declaring the state variables
   const [categories, setCategories] = useState([]);
   const [searchText, setSearchText] = useState("");
-  // const [productsData, setProductsData] = useState([]); // here Im trying to move this state from child componenet to this component
+  const [productsData, setProductsData] = useState([]); // here Im trying to move this state from child componenet to this component
   const [pageinfo, setPageinfo] = useState({
     page: 1,
     min: '',
@@ -42,6 +42,7 @@ const MarketplacePage = ({
     setPageinfo({ ...pageinfo, [name]: Number(value) });
   };
 
+  //search function
   const handleSearch = async () => {
     console.log(pageinfo);
     const searchInfo = {
@@ -52,8 +53,8 @@ const MarketplacePage = ({
     
     try {
       const res = await axios.post(`https://japura-edge-server.azurewebsites.net/product/search`, searchInfo)
-      // setProductsData(res.data) // if the productsData state define in this state then it is very easy set the search result like this
-      console.log(res.data);
+      setProductsData(res.data) // if the productsData state define in this state then it is very easy set the search result like this
+      console.log(productsData);
     }
     catch(err) {
       console.log(err);
@@ -100,7 +101,7 @@ const MarketplacePage = ({
               backEndServer={backEndServer}
               searchEnabled="1"
               searchText={newSearchText}
-              // productsData={productsData} setProductsData={setProductsData} // transfer state & setters to child component
+              setProductsData={setProductsData} // transfer state & setters to child component
             />
             <div className="product-page row">
               <button className="prev-page" name='page' onClick={() => handleClick('prev')} >Previous</button>

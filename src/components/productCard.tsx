@@ -4,32 +4,21 @@ import axios from "axios";
 
 const ProductCard = ({
   backEndServer,
-  searchEnabled = "0",
   searchText = "",
-  // productsData, setProductsData    // if productsData state define in above component
+  setProductsData    // if productsData state define in above component
 }: any) => {
   //declaring the state variables
-  const [productsData, setProductsData] = useState([]);
+  const [productsData, setLocalProductsData] = useState([]);
   const [userData, setUserData] = useState([]);
   var user: any;
 
   // fetching the product data from the database using axios
   const getProductsData = async () => {
     try {
-      if (searchEnabled === "1" && searchText !== "") {
-        console.log(searchText);
-        const response = await axios.post(`${backEndServer}/product/search`, {
-          key: searchText,
-          page: "",
-        });
-        setProductsData(response.data);
-        console.log(response.data);
-      } else {
-        const response = await axios.get(`${backEndServer}/product`);
-        setProductsData(response.data);
-      }
+      const response = await axios.get(`https://japura-edge-server.azurewebsites.net/product`)
+      setLocalProductsData(response.data)
     } catch (error) {
-      console.log(error);
+      console.log(error)
     }
   };
 
@@ -54,6 +43,11 @@ const ProductCard = ({
     getProductsData();
     getUserData();
   }, [searchText]);
+
+  // update the parent component's state when the local state changes
+  useEffect(() => {
+    () => {setProductsData(productsData)};
+  }, [productsData, setProductsData]);
 
   // rending the product card
   return (

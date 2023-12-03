@@ -1,18 +1,16 @@
-import { useEffect, useState } from "react";
 import "../assets/searchBox.css";
 
-const SearchBox = ({ updateSearchText }: any) => {
+const SearchBox = ({ updateSearchText, searchText, setSearchText, handleSearch}: any) => {
   //declaring the state variables
-  const [searchText, setSearchText] = useState("");
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      updateSearchText(searchText);
-    }, 400);
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [searchText]);
+  
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     updateSearchText(searchText);
+  //   }, 400);
+  //   return () => {
+  //     clearTimeout(timer);
+  //   };
+  // }, [searchText]);
 
   //handle the search text change
   const handleSearchTextChange = (event: any) => {
@@ -28,7 +26,7 @@ const SearchBox = ({ updateSearchText }: any) => {
         value={searchText}
         onChange={handleSearchTextChange}
       />
-      <button className="fa fa-search"></button>
+      <button className="fa fa-search" onClick={handleSearch} ></button>
     </div>
   );
 };

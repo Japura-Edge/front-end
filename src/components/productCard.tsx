@@ -6,6 +6,7 @@ const ProductCard = ({
   backEndServer,
   searchEnabled = "0",
   searchText = "",
+  // productsData, setProductsData    // if productsData state define in above component
 }: any) => {
   //declaring the state variables
   const [productsData, setProductsData] = useState([]);
@@ -31,6 +32,7 @@ const ProductCard = ({
       console.log(error);
     }
   };
+
   //fetching user data from the database
   const getUserData = async () => {
     try {

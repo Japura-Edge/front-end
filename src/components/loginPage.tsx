@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "axios"
 import {useState} from 'react'
 import { useNavigate } from 'react-router-dom';
 import "../assets/loginPage.css";
@@ -24,7 +24,8 @@ const LoginPage = ({ backEndServer }: any) => {
   }
 
   const handlelogin = async () => {
-    try { const res = await axios.post(`https://japura-edge-server.azurewebsites.net/user/login`, userData)
+    try { 
+      const res = await axios.post(`https://japura-edge-server.azurewebsites.net/user/login`, userData)
 
       if (res.data.message) {
         const { message } = res.data;      

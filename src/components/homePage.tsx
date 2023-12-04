@@ -66,8 +66,8 @@ const HomePage = ({ backEndServer }: any) => {
             Japura Edge is the one and only online platform that connects the
             entrepreneurs and the freelancers of the University of Sri
             Jayewardenepura. This platform is designed to help the students to
-            offer their services to the society. <span>Exclusive for</span> the
-            students of the <span>University of Sri Jayewardenepura</span>.
+            offer their services to the society. Exclusive for the students of
+            the <span>University of Sri Jayewardenepura</span>.
           </p>
         </div>
       </div>

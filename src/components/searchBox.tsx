@@ -1,8 +1,9 @@
 import "../assets/searchBox.css";
 
-const SearchBox = ({ updateSearchText, searchText, setSearchText, handleSearch}: any) => {
+const SearchBox = ({ searchText, setSearchText, handleSearch }: any) => {
+  // const SearchBox = ({ updateSearchText, searchText, setSearchText, handleSearch}: any) => {
   //declaring the state variables
-  
+
   // useEffect(() => {
   //   const timer = setTimeout(() => {
   //     updateSearchText(searchText);
@@ -26,7 +27,7 @@ const SearchBox = ({ updateSearchText, searchText, setSearchText, handleSearch}:
         value={searchText}
         onChange={handleSearchTextChange}
       />
-      <button className="fa fa-search" onClick={handleSearch} ></button>
+      <button className="fa fa-search" onClick={handleSearch}></button>
     </div>
   );
 };
